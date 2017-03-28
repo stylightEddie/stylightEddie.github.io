@@ -1,0 +1,39 @@
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+html {
+  body {
+    & * {
+      box-sizing: border-box;
+    }
+    
+    .wrap {
+      padding: 0 15px;
+      
+      .header {
+        margin: 0 auto;
+        
+        h2 {
+          text-align: center;
+        }
+        
+        .description {
+          -webkit-column-count: 2;
+          -moz-column-count: 2;
+          column-count: 2;
+          -webkit-column-width: 240px;
+          -moz-column-width: 240px;
+          column-width: 240px;
+          
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
